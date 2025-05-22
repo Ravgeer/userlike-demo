@@ -1,0 +1,38 @@
+<!-- page2.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Userlike Test – Kanal 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; text-align: center; }
+    header { margin-bottom: 2rem; }
+    nav a { margin: 0 1rem; text-decoration: none; color: #0066cc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Userlike Testseite – Kanal 2</h1>
+    <nav>
+      <a href="index.html">Kanal 1</a> |
+      <a href="page2.html">Kanal 2</a>
+    </nav>
+  </header>
+  <p>Dies ist Seite 2. Der Chat-Button öffnet Kanal 2.</p>
+  
+  <!-- Userlike Widget: Kanal 2 -->
+  <script>
+    var _userlike = _userlike || {};
+    _userlike.key = '931902fa0d784b3b88553fbe2637bf123dcfbe319155411b8af99b83870e049f';            // Ersetzen Sie durch Ihren Userlike-Schlüssel
+    _userlike.widget = 'KANAL_ID_2';               // Ersetzen Sie durch die ID von Kanal 2
+    (function(d) {
+      var s = d.createElement('script');
+      s.async = true;
+      s.src = 'https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/0311e734d84c528de0eXXe40471bf66734d7XX8079b994309a18XXXXXaa79fe910.js';
+      var e = d.getElementsByTagName('script')[0];
+      e.parentNode.insertBefore(s, e);
+    })(document);
+  </script>
+</body>
+</html>
